@@ -1,0 +1,64 @@
+<div class="jumbotron">
+    <div class="container">
+        <h2>Meetings</h2>
+        <p class="lead">The complete list of meetings since 2001</p>
+        <p class="lead">
+            All meetings are held every <b>second Tuesday</b> of the month at the <a href="http://www.scotchplainsrescuesquad.com/" target="_blank">Scotch Plains Rescue Squad</a> second floor meeting hall starting promptly at <b>7:30pm</b>.
+        </p>
+    </div>
+</div>
+
+<!-- <div class="jumbotron">
+    <div class="container">
+        <table class="table table-hover">
+            <tr>
+                <td><a href="/2001">2001</a></td>
+                <td><a href="/2002">2002</a></td>
+                <td><a href="#">2003</a></td>
+                <td><a href="#">2004</a></td>
+                <td><a href="#">2005</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">2006</a></td>
+                <td><a href="#">2007</a></td>
+                <td><a href="#">2008</a></td>
+                <td><a href="#">2009</a></td>
+                <td><a href="#">2010</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">2011</a></td>
+                <td><a href="#">2012</a></td>
+                <td><a href="#">2013</a></td>
+                <td><a href="#">2014</a></td>
+                <td><a href="#">2015</a></td>
+            </tr>
+        </table>
+    </div>
+</div> -->
+
+<div class="jumbotron">
+    <div class="row h100">
+        <div class="col-md-8 ma-meetings-col">
+            <table class="table table-hover">
+                <tr dir-paginate="meeting in meetings | itemsPerPage: perPage" total-items="meetingsCount.count" class="ma-meeting-item">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <td class="ma-meeting-date"><a href="/meetings/{{meeting._id}}">{{ meeting.month }} {{ meeting.year }}</a></td>
+                            <td class="ma-meeting-title">{{ meeting.title }}</td>
+                            <td class="ma-meeting-description">{{ meeting.description }}</td>
+                        </div>
+                    </div>
+                </tr>
+            </table>
+            <dir-pagination-controls on-page-change="pageChanged(newPageNumber)"></dir-pagination-controls>
+        </div>
+        <div class="col-md-4 h100 ma-angular-map-col">
+            <div class="angular-google-map-container h100">
+                <ui-gmap-google-map center="map.center" zoom="map.zoom" options="map.options">
+                    <ui-gmap-markers models="meetings" coords="'location'" click="onClicked()" fit="true" idkey="'_id'" doRebuildAll="true">
+                    </ui-gmap-markers>
+                </ui-gmap-google-map>
+            </div>
+        </div>
+    </div>
+</div>

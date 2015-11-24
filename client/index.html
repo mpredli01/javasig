@@ -1,0 +1,40 @@
+<head>
+    <title>ACGNJ Java Users Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <link href='http://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div ng-app="javasig">
+    <header class="navbar navbar-default navbar-inner navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse" ng-click="isCollapsed = !isCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <div class="nav-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/meetings" class="navbar-brand">meetings</a></li>
+                    <li><a href="/aboutus" class="navbar-brand">about us</a></li>
+                    <li><a href="/sponsor" class="navbar-brand">sponsor</a></li>
+                    <li><a href="/partners" class="navbar-brand">partners</a></li>
+                    <li><a href="/contributors" class="navbar-brand">contributors</a></li>
+                    <li><a href="/archive" class="navbar-brand">archive</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="h100">
+        <div ui-view class="ma-main-container container-fluid h100"></div>
+    </div>
+</div>
+
+</body>

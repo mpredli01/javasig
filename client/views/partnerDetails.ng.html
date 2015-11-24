@@ -1,0 +1,32 @@
+<div class="jumbotron">
+    <div class="row ma-meeting-details-container">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h2>
+                {{ partner.partner }}
+            </h2>
+            <table class="table table-hover">
+                <tr>
+                    <td>Leader:</td>
+                    <td>{{ partner.leader }}</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>{{ partner.city }}, {{ partner.state }}</td>
+                </tr>
+                <tr>
+                    <td>Web Site:</td>
+                    <td><a href="{{ partner.url }}" target="_blank">{{ partner.url }}</a></td>
+                </tr>
+            </table>
+            <!-- <h3 class="ma-map-title">
+                Click the map to set the meeting location
+            </h3>
+            <div class="angular-google-map-container">
+                <ui-gmap-google-map center="map.center" events="map.events" zoom="map.zoom">
+                    <ui-gmap-marker coords="meeting.location" options="map.marker.options" events="map.marker.events" idkey="meeting._id">
+                    </ui-gmap-marker>
+                </ui-gmap-google-map>
+            </div> -->
+        </div>
+    </div>
+</div>

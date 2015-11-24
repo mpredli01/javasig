@@ -1,0 +1,133 @@
+<header class="jumbotron">
+    <div class="container">
+        <h2>2001</h2>
+        <p class="lead">Monthly Meeting Overview</p>
+    </div>
+</header>
+
+<div class="jumbotron">
+    <table class="table table-hover">
+        <tr>
+            <td>Meeting Date</td>
+            <td>Title</td>
+            <td>Description</td>
+        </tr>
+        <tr ng-repeat="meeting in meetings">
+            <td><a href="/meetings/{{ meeting._id }}">{{ meeting.month }} {{ meeting.year }}</a></td>
+            <td>{{ meeting.title }}</td>
+            <td>{{ meeting.description }}</td>
+        </tr>
+    </table>
+</div>
+
+<!--
+<body>
+
+<table align="center" class="smallFont" border="0">
+	<tr>
+		<td valign="top">&bull;</td>
+		<td align="center" valign="top"><a href="./" target="_top"><img src="../images/new1-05.gif" alt="Back to Java Users Group Home" title="Back to Java Users Group Home" border="0"></a></td>
+		<td valign="top">&bull;</td>
+		<td align="center" valign="top"><a href="javascript:window.print()"><img src="../images/print.gif" alt="Print this page" title="Print this page" border="0"></a></td>
+		<td valign="top">&bull;</td>
+	</tr>
+</table>
+
+<h1 align="center">Java Users Group</h1>
+<h2 align="center">2001 Monthly Meeting Overview</h2>
+
+<table border="0">
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">February 2001</td>
+		<td valign="top"><a href="feb2001.html">NervousText Applet</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">March 2001</td>
+		<td valign="top"><a href="mar2001.html">Introduction to Object-Oriented Programming</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">April 2001</td>
+		<td valign="top"><a href="apr2001.ng.html">No Meeting (TCF preparation and shared night with PC Symposium)</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">May 2001</td>
+		<td valign="top"><a href="may2001.html">No Meeting (TCF preparation and shared night with PC Symposium)</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">June 2001</td>
+		<td valign="top"><a href="jun2001.html">Dynamic Web Page Generation Using Java and Databases</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">July 2001</td>
+		<td valign="top"><a href="jul2001.html">A Comparison of Java and C++</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">August 2001</td>
+		<td valign="top"><a href="aug2001.html">No Meeting (summer break)</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">September 2001</td>
+		<td valign="top"><a href="sep2001.html">No Meeting (canceled due to World Trade Center attacks)</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">October 2001</td>
+		<td valign="top"><a href="oct2001.html">Clock Applet</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">November 2001</td>
+		<td valign="top"><a href="nov2001.html">Technical Overview of <code>JUnit</code>: A Simple Framework to Write Repeatable Tests</a></td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="../images/duke.gif" alt="Tumbling Duke Icon" title="Tumbling Duke Icon"></td>
+		<td width="150" valign="top">December 2001</td>
+		<td valign="top"><a href="dec2001.html">Developing Dynamic Content Web Applications</a></td>
+	</tr>
+</table>
+
+<p></p>
+
+<table width="100%" border="0">
+	<tr>
+		<td>
+			Meetings are open to the public, and visitors are encouraged to join <a href="http://www.acgnj.org/">ACGNJ</a>.
+			For the latest information about this users group, please visit <a href="http://www.javasig.org/">http://www.javasig.org/</a>.
+		</td>
+	</tr>
+</table>
+
+<p></p>
+
+<table align="left" class="smallFont" border="0">
+	<tr>
+		<td valign="top">&bull;</td>
+		<td align="left" valign="top" style="font-weight: bold">SIG Leader</td>
+		<td valign="top">&bull;</td>
+		<td align="left" valign="top">Mike Redlich</td>
+		<td valign="top">&bull;</td>
+	</tr>
+	<tr>
+		<td valign="top">&bull;</td>
+		<td align="left" valign="top" style="font-weight: bold">E-Mail</td>
+		<td valign="top">&bull;</td>
+		<td align="left" valign="top"><a href="mailto:mike@redlich.net">mike@redlich.net</a></td>
+		<td valign="top">&bull;</td>
+	</tr>
+	<tr>
+		<td valign="top">&bull;</td>
+		<td align="left" valign="top" style="font-weight: bold">Phone:</td>
+		<td valign="top">&bull;</td>
+		<td align="left" valign="top">(908) 246-0410</td>
+		<td valign="top">&bull;</td>
+	</tr>
+</table>
+</body> -->

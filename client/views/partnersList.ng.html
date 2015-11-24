@@ -1,0 +1,21 @@
+<div class="jumbotron">
+    <div class="container">
+        <h2>Partners</h2>
+        <p class="lead">We consider the following Java Users Groups as our partners as we have worked with them in some way over the years.</p>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <table class="table table-hover">
+        <tr>
+            <td>Partner</td>
+            <td>Facilitated By</td>
+            <td>Location</td>
+        </tr>
+        <tr ng-repeat="partner in partners">
+            <td><a href="/partners/{{partner._id}}">{{ partner.partner }}</a></td>
+            <td>{{ partner.leader }}</td>
+            <td>{{ partner.city }}, {{ partner.state }}</td>
+        </tr>
+    </table>
+</div>
