@@ -13,17 +13,27 @@
             <p class="lead">
                 All meetings are held every <b>second Tuesday</b> of the month at the <a href="http://www.scotchplainsrescuesquad.com/" target="_blank">Scotch Plains Rescue Squad</a> second floor meeting hall starting promptly at <b>7:30pm</b>.
             </p>
-            <p class="lead">
-                <span class="glyphicon glyphicon-leaf"></span>
-                <a href="#leadership">leadership</a>
-                <span class="glyphicon glyphicon-leaf"></span>
-                <a href="#agenda">agenda</a>
-                <span class="glyphicon glyphicon-leaf"></span>
-                <a href="#about-mike">about mike</a>
-                <span class="glyphicon glyphicon-leaf"></span>
-                <a href="#about-barry">about barry</a>
-                <span class="glyphicon glyphicon-leaf"></span>
-            </p>
+            <!-- <div class="col-md-4 ma-angular-map-col">
+                <div class="angular-google-map-container h100">
+                    <ui-gmap-google-map center="map.center" zoom="map.zoom" options="map.options">
+                        <ui-gmap-markers models="meetings" coords="'location'" click="onClicked()" fit="true" idkey="'_id'" doRebuildAll="true"></ui-gmap-markers>
+                    </ui-gmap-google-map>
+                </div>
+            </div> -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Navigation</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#leadership">leadership</a></li>
+                    <li><a href="#agenda">agenda</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#about-mike">about mike</a></li>
+                    <li><a href="#about-barry">about barry</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
@@ -31,7 +41,7 @@
 <section id="leadership">
     <div class="jumbotron">
         <div class="container">
-            <h2>Leadership <a href="#top" class="glyphicon glyphicon-hand-up"></a></h2>
+            <h2>Leadership <a href="#top" class="fa fa-chevron-circle-up"></a></h2>
             <p class="lead">
             <table class="table table-hover">
                 <tr>
@@ -55,7 +65,7 @@
 <section id="agenda">
     <div class="jumbotron">
         <div class="container">
-            <h2>Agenda <a href="#top" class="glyphicon glyphicon-hand-up"></a></h2>
+            <h2>Agenda <a href="#top" class="fa fa-chevron-circle-up"></a></h2>
             <p class="lead">
             <table class="table table-hover">
                 <tr>
@@ -79,9 +89,9 @@
 <section id="about-mike">
     <div class="jumbotron">
         <div class="container">
-            <h2>About Mike <a href="http://www.twitter.com/mpredli" target="_blank"><img src="/images/twitter-circle-128.png" width="30" height="30" alt="Twitter Icon" title="Twitter Icon"/></a> <a href="#top" class="glyphicon glyphicon-hand-up"></a></h2>
+            <h2>About Mike <a href="http://www.twitter.com/mpredli" target="_blank"><i class="fa fa-twitter"></i></a> <a href="#top" class="fa fa-chevron-circle-up"></a></h2>
             <div class="row h100">
-                <div class="col-md-5">
+                <div class="col-md-5 circular-image">
                     <img src="/images/mike-redlich.jpg" width="400" height="300" alt="Mike" title="Mike"/>
                 </div>
                 <div class="col-md-7">
@@ -101,9 +111,9 @@
 <section id="about-barry">
     <div class="jumbotron">
         <div class="container">
-            <h2>About Barry <a href="http://www.twitter.com/barryburdtweets" target="_blank"><img src="/images/twitter-circle-128.png" width="30" height="30" alt="Twitter Icon" title="Twitter Icon"/></a> <a href="#top" class="glyphicon glyphicon-hand-up"></a></h2>
+            <h2>About Barry <a href="http://www.twitter.com/barryburdtweets" target="_blank"><i class="fa fa-twitter"></i></a> <a href="#top" class="fa fa-chevron-circle-up"></a></h2>
             <div class="row h100">
-                <div class="col-md-5">
+                <div class="col-md-5 circular-image">
                     <img src="/images/barry-burd.jpg" width="400" height="300" alt="Barry" title="Barry"/>
                 </div>
                 <div class="col-md-7">
